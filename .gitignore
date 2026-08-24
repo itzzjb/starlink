@@ -1,0 +1,39 @@
+node_modules
+dist
+dist-electron
+release
+.output
+.wxt
+.DS_Store
+
+collector/data
+
+**/__screenshots__/
+.vitest-attachments/
+
+# Local Starlink account session for the dev cloud proxy (never commit).
+.starlink-cookie
+.router-address
+
+# Machine-specific agent state.
+.claude/
+
+# Working notes and throwaway probe scripts. Local to whoever is mid-task.
+HANDOFF.md
+*.tmp.mts
+
+# Local working notes. Open security TODOs live here rather than in a public file.
+*.local.md
+
+# Rasterized from build/icon.svg by scripts/make-icon.mjs. The SVG is the only committed form of the mark.
+build/icon.icns
+build/icon.png
+
+# Rendered from the tones in src/lib/alertSound.ts by scripts/make-alert-sounds.mjs,
+# so the chime the tray plays cannot drift from the one the dashboard synthesises.
+build/sounds/
+
+.wrangler/
+# Unanchored: astro writes this cache into whichever directory it is run from,
+# not only the project root.
+.astro/
